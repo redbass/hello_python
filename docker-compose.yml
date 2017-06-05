@@ -1,0 +1,4 @@
+hello_python:
+  build: .
+  ports:
+   - "5000:5000"

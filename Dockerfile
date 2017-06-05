@@ -1,7 +1,9 @@
 FROM python:3
 
-ADD app
+ADD app .
 
-RUN pip install -r app/requirements.txt
+RUN pip install -r requirements.txt
 
-CMD [ "python", "./app/app.py" ]
+ENTRYPOINT ["python"]
+
+CMD ["app.py"]
